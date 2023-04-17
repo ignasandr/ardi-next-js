@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <>
         <div className={styles.header}>
-            <div className={styles.logo}>
+            <div className="m-6 w-36">
                 <a href="/">
                     <Image src={logo} alt="ardi logo" />
                 </a>
