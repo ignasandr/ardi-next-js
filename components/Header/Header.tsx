@@ -6,11 +6,10 @@ import logo from "../../public/images/logo.svg";
 
 export default function Header() {
   return (
-    <>
         <div className={styles.header}>
             <div className="m-6 w-36">
                 <a href="/">
-                    <Image src={logo} alt="ardi logo" />
+                    <Image src={logo} alt="ardi logo" priority/>
                 </a>
             </div>
             <div className="line">
@@ -20,7 +19,6 @@ export default function Header() {
                 <a href="/catalogs">Catalogs</a>
             </nav>
         </div>
-    </>
   )
 }
 
