@@ -4,7 +4,7 @@ const Menu: GlobalConfig = {
   slug: "menu",
   label: { en: "Menu", lt: "Meniu" },
   access: {
-    read: (): boolean => true, // Everyone can read Tean
+    read: (): boolean => true, // Everyone can read Menu
   },
   fields: [
     {
@@ -13,9 +13,8 @@ const Menu: GlobalConfig = {
       minRows: 1,
       fields: [
         {
-          name: "catalog",
-          type: "relationship",
-          relationTo: "catalogs",
+          name: "menuItem",
+          type: "text",
         },
       ],
     },
